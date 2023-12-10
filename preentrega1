@@ -1,0 +1,82 @@
+
+
+
+
+
+let alerta01=prompt("Ingrese el primer valor inicial del rango");
+
+ const a=parseInt(alerta01);
+
+
+let alerta02=prompt("Ingrese el valor final del rango")
+
+ const b=parseInt(alerta02);
+
+let alerta03=prompt("ingrese el multiplo");
+
+ const multiplo=parseInt(alerta03);
+
+
+ if(a!=NaN){
+
+    console.log("ingrese un numero");
+
+ }
+ else if(b!=NaN){
+
+    console.log("ingrese un numero");
+
+}
+else(multiplo!=NaN){
+
+    console.log("ingrese un numero");
+
+
+}
+
+
+
+function calculoMultiplo(){
+
+     a,b,multiplo;
+
+   
+
+
+
+function arregloNumeros(c,d,multiplo1) {
+
+    multiplo1=multiplo;
+     c=a;
+     d=b;
+
+     
+
+    
+
+
+    const arreglo=[];
+    
+    for( let i=c; i<=d; i++ ){
+    
+    if(i % multiplo1===0) arreglo.push(i);
+
+    }
+   
+
+    
+  
+    document.getElementById("demo").innerHTML= arreglo;
+
+    }
+
+
+    arregloNumeros()
+    
+}
+
+calculoMultiplo()
+
+
+    
+
