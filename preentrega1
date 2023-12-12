@@ -3,12 +3,24 @@
 
 
 
-let alerta01=prompt("Ingrese el primer valor inicial del rango");
+
+
+
+
+
+ 
+
+
+
+function calculoMultiplo(){
+
+
+    
+    let alerta01 = prompt("Ingrese el valor inicial del rango.");
 
  const a=parseInt(alerta01);
 
-
-let alerta02=prompt("Ingrese el valor final del rango")
+let alerta02=prompt("Ingrese el valor final del rango");
 
  const b=parseInt(alerta02);
 
@@ -17,47 +29,53 @@ let alerta03=prompt("ingrese el multiplo");
  const multiplo=parseInt(alerta03);
 
 
- if(a!NaN){
+ if(isNaN(a) || a < 0)  {
 
-    console.log("ingrese un numero");
+   alert("El Valor inicial del rango debe ser un numero mayor o igual que cero");
+   
 
+   
  }
- else if(b!=NaN){
 
-    console.log("ingrese un numero");
+ if(isNaN(b) || b < 0)  {
 
-}
-else(multiplo!NaN){
-
-    console.log("ingrese un numero");
-
-
-}
+    alert("El Valor final del rango debe ser un numero mayor o igual que cero");
+ 
+    
+    
+  }
 
 
-
-function calculoMultiplo(){
 
      a,b,multiplo;
 
    
-
-
-
 function arregloNumeros(c,d,multiplo1) {
+
+
+
 
     multiplo1=multiplo;
      c=a;
      d=b;
 
-     
 
-    
+
 
 
     const arreglo=[];
+
+    
     
     for( let i=c; i<=d; i++ ){
+
+        /*Colocamos un condicional + alert dentro de la funcion arregloNumeros, pues de este modo se soluciona el caso de un nro 
+        a negativo, b positivo y multiplo positivo o string. */
+
+        if(multiplo1 <1 || c<0 || d<0){
+            alert("Por favor ingrese un multiplo, que sea numero mayor que cero")
+            break
+        }
     
     if(i % multiplo1===0) arreglo.push(i);
 
@@ -76,6 +94,11 @@ function arregloNumeros(c,d,multiplo1) {
 }
 
 calculoMultiplo()
+
+
+    
+
+
 
 
     
