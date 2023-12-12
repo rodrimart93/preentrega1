@@ -17,7 +17,7 @@ let alerta03=prompt("ingrese el multiplo");
  const multiplo=parseInt(alerta03);
 
 
- if(a!=NaN){
+ if(a!NaN){
 
     console.log("ingrese un numero");
 
@@ -27,7 +27,7 @@ let alerta03=prompt("ingrese el multiplo");
     console.log("ingrese un numero");
 
 }
-else(multiplo!=NaN){
+else(multiplo!NaN){
 
     console.log("ingrese un numero");
 
